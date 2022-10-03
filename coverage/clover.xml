@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664787490559" clover="3.2.0">
-  <project timestamp="1664787490559" name="All files">
-    <metrics statements="19" coveredstatements="6" conditionals="30" coveredconditionals="10" methods="5" coveredmethods="2" elements="54" coveredelements="18" complexity="0" loc="19" ncloc="19" packages="1" files="2" classes="2"/>
+<coverage generated="1664789917384" clover="3.2.0">
+  <project timestamp="1664789917385" name="All files">
+    <metrics statements="31" coveredstatements="18" conditionals="42" coveredconditionals="22" methods="7" coveredmethods="4" elements="80" coveredelements="44" complexity="0" loc="31" ncloc="31" packages="1" files="3" classes="3"/>
     <file name="10-05-unit-test-for-classifyStudent.js" path="C:\Projects\Javascript-lab\10-05-unit-test-for-classifyStudent.js">
       <metrics statements="17" coveredstatements="5" conditionals="30" coveredconditionals="10" methods="3" coveredmethods="1"/>
       <line num="15" count="0" type="cond" truecount="0" falsecount="4"/>
@@ -21,6 +21,21 @@
       <line num="49" count="8" type="cond" truecount="2" falsecount="0"/>
       <line num="50" count="6" type="cond" truecount="2" falsecount="0"/>
       <line num="52" count="3" type="stmt"/>
+    </file>
+    <file name="10-06-unit-test-for-checkIfAllEven.js" path="C:\Projects\Javascript-lab\10-06-unit-test-for-checkIfAllEven.js">
+      <metrics statements="12" coveredstatements="12" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+      <line num="3" count="9" type="cond" truecount="4" falsecount="0"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="8" count="6" type="stmt"/>
+      <line num="9" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="21" count="9" type="cond" truecount="4" falsecount="0"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="24" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="27" count="1" type="stmt"/>
     </file>
     <file name="main.js" path="C:\Projects\Javascript-lab\main.js">
       <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
