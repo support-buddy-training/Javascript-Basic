@@ -5,7 +5,7 @@
 // // n = 1 -> 1
 // // n = 2 -> 3
 // // n = 3 -> 6
-import { calcS, calcSv2 } from './01-sum';
+import { calcS, calcSv2 } from './00-sum';
 
 describe('S(n) = 1 + 2 + 3 + … + n', () => {
 	test('should return 0 if n <=0', () => {
