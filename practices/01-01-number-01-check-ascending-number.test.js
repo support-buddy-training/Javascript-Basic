@@ -1,4 +1,4 @@
-import { isIncreasingNumber, isIncreasingNumber2 } from './01-number-01-check-ascending-number';
+import { isIncreasingNumber, isIncreasingNumber2 } from './01-01-number-01-check-ascending-number';
 
 describe('isIncreasingNumber(n)', () => {
 	test('should return false when n < 10 or n > 1000000', () => {

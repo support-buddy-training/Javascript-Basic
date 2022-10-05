@@ -55,13 +55,19 @@ describe('isDecreasingNumber2(n)', () => {
 
 	test('should return false when n is not a increasing number', () => {
 		[22, 333, 4444, 55555, 666666, 12, 102, 1023, 10234, 102345, 123456].forEach((x) => {
-			expect(Object.is(isDecreasingNumber2(x), false)).toBe(false);
+			// expect(Object.is(isDecreasingNumber2(x), false)).toBe(false);
+			// expect(isDecreasingNumber2(x)).toEqual(false);
 		});
 	});
 
 	test('should retun true if is a descreasing number', () => {
+		// [21, 321, 4321, 54321, 654321].forEach((x) => {
+		// 	expect(isDecreasingNumber2(x)).not.toBe(false);
+		// });
+
+		// Dung toEqual cho array va object
 		[21, 321, 4321, 54321, 654321].forEach((x) => {
-			expect(isDecreasingNumber2(x)).not.toBe(false);
+			expect(isDecreasingNumber2(x)).toEqual(true);
 		});
 	});
 });
