@@ -1,4 +1,4 @@
-import { isDecreasingNumber, isDecreasingNumber2 } from './01-number-01-check-decreasing-number';
+import { isDecreasingNumber, isDecreasingNumber2 } from './01-02-number-01-check-decreasing-number';
 
 describe('isDecreasingNumber(n)', () => {
 	test('should retun false if n < 10 or n > 1000000', () => {
