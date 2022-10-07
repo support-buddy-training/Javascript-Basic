@@ -38,7 +38,7 @@ describe('createStack()', () => {
 		const stack = createStack();
 		expect(stack.getSize()).toBe(0);
 		expect(stack.isEmpty()).toBe(true);
-		expect(stack.getTop()).toBeUndefined(true);
+		expect(stack.getTop()).toBeUndefined();
 
 		// push: 4
 		stack.push(4);

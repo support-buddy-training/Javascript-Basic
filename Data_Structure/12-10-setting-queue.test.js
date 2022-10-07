@@ -10,7 +10,11 @@ function createQueue() {
 
 	function getBack() {
 		// return queue.length > 0 ? queue[queue.length - 1] : undefined;
-		return queue[queue.length];
+		return queue[queue.length - 1];
+	}
+
+	function getSize() {
+		return queue.length;
 	}
 
 	function enqueue(data) {
@@ -24,6 +28,7 @@ function createQueue() {
 	return {
 		getFront,
 		getBack,
+		getSize,
 		enqueue,
 		dequeue,
 	};
@@ -34,33 +39,33 @@ describe('createQueue()', () => {
 		// empty queue
 		const queue = createQueue();
 		expect(queue.getSize()).toBe(0);
-		expect(queue.getFront()).toBeUndefined(true);
-		expect(queue.getBack).toBe(undefined);
+		expect(queue.getFront()).toBeUndefined();
+		expect(queue.getBack()).toBeUndefined();
 
 		// enqueue: 1
 		queue.enqueue(1);
 		expect(queue.getSize()).toBe(1);
 		expect(queue.getFront()).toBe(1);
-		expect(queue.getBack).toBe(1);
+		expect(queue.getBack()).toBe(1);
 
 		// enqueue 2
 		queue.enqueue(2);
 		expect(queue.getSize()).toBe(2);
 		expect(queue.getFront()).toBe(1);
-		expect(queue.getBack).toBe(2);
+		expect(queue.getBack()).toBe(2);
 
 		// dequeue() --> 1
 		const four = queue.dequeue();
 		expect(four).toBe(1);
 		expect(queue.getSize()).toBe(1);
 		expect(queue.getFront()).toBe(2);
-		expect(queue.getBack).toBe(2);
+		expect(queue.getBack()).toBe(2);
 
 		// dequeue() --> 2
 		const two = queue.dequeue();
 		expect(two).toBe(2);
 		expect(queue.getSize()).toBe(0);
-		expect(queue.getFront()).toBe(undefined);
-		expect(queue.getBack).toBe(undefined);
+		expect(queue.getFront()).toBeUndefined();
+		expect(queue.getBack()).toBeUndefined();
 	});
 });
