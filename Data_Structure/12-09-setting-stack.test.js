@@ -59,7 +59,7 @@ describe('createStack()', () => {
 		expect(stack.isEmpty()).toBe(false);
 		expect(stack.getTop()).toBe(4);
 
-		// pop() --> 2
+		// pop() --> 4
 		const four = stack.pop();
 		expect(four).toBe(4);
 		expect(stack.getSize()).toBe(0);
