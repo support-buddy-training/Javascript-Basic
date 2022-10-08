@@ -1,6 +1,6 @@
 // Part 12 lesson 16: Binary Search Tree - Insert
 
-function creteBinarySearchTree(initKeyList) {
+function createBinarySearchTree(initKeyList) {
 	let root = null;
 
 	if (Array.isArray(initKeyList) && initKeyList.length > 0) {
@@ -35,8 +35,8 @@ function creteBinarySearchTree(initKeyList) {
 	};
 }
 
-// const binarySearchTree = creteBinarySearchTree([10, 7, 15]);
+// const binarySearchTree = createBinarySearchTree([10, 7, 15]);
 // console.log(binarySearchTree.root);
 
-const binarySearchTree = creteBinarySearchTree([10, 7, 15, 5, 9, 20, 13, 17]);
+const binarySearchTree = createBinarySearchTree([10, 7, 15, 5, 9, 20, 13, 17]);
 console.log(binarySearchTree.root);
